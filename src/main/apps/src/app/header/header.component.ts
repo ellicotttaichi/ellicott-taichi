@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TestComponent } from './test/test.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @Component({
   selector: 'app-header',
