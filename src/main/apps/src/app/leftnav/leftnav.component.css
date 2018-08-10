@@ -1,0 +1,15 @@
+.Home{
+    width: 10%;
+    z-index: 0;
+    height: 200%;
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    margin-top: 1px;
+    border-radius: 8px; 
+    float: center;
+    overflow: hidden;
+    background-color: black;
+    background-image: url("../../assets/images/banner_zen.jpg"); 
+    background-position-x: center;
+}

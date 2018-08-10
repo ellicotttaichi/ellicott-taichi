@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { TestComponent } from './header/test/test.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { LeftnavComponent } from './leftnav/leftnav.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TestComponent
+    LeftnavComponent
   ],
   imports: [
     BrowserModule,
