@@ -20,4 +20,6 @@ import { LeftnavComponent } from './leftnav/leftnav.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }
