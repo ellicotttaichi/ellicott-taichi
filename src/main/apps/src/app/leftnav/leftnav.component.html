@@ -1,4 +1,9 @@
-<nav class="leftnav">
+<ul class= "leftNavControl">
+  <li class = "active"><a href = ""> Home</a></li>
+  <li><a href = "">Another Option</a></li>
+</ul>
+
+<nav [ngSwitch]="viewMode">
   <div class = "Home">
     <li class="nav-item">
       <a class="nav-link"
@@ -7,6 +12,7 @@
       </a>
     </li>
   </div>
+
   <div class = "Latest News">
     <li class="nav-item">
       <a class="nav-link"
@@ -15,10 +21,31 @@
       </a>
     </li>
   </div>
-  <div class = "Class Schedule">
 
+  <div class = "Class Schedule">
+    <li class="nav-item">
+      <a class="nav-link"
+        routerLink="/">
+        Sunday Class Schedule 
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"
+        routerLink="/">
+        #2
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"
+        routerLink="/">
+        #3
+      </a>
+    </li>
   </div>
+
   <div class = "Photo and Video Gallery"></div>
+
   <div class = "Resources"></div>
+
   <div class = "Other"></div>
 </nav>
