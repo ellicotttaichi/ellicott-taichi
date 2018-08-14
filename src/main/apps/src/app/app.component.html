@@ -1,6 +1,6 @@
 <div class = "website">
-  <app-header></app-header>
-  <app-leftnav></app-leftnav>
+  <app-header  (itemEvent)="receiveHeaderEvent($event)"></app-header>
+  <app-leftnav [item]="headerItem"></app-leftnav>
   <div>
     <div id = 'left-nav-menus'> </div>
     <div id = 'mainContentCtrl'> </div>

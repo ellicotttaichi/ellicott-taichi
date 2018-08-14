@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { LeftnavComponent } from './leftnav/leftnav.component'; 
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  @ViewChild(LeftnavComponent) leftNav;
+
+  headerItem: string = 'home';
+
+  receiveHeaderEvent($event) {
+    this.headerItem = $event; 
+    
+    console.info('Show: ' + $event);
+  }
+  
 }
