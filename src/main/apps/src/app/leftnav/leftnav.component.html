@@ -1,10 +1,6 @@
-<ul class= "leftNavControl">
-  <li class = "active"><a href = ""> Home</a></li>
-  <li><a href = "">Another Option</a></li>
-</ul>
 
-<nav [ngSwitch]="viewMode">
-  <div class = "Home">
+<nav>
+  <div class = "Home" *ngIf="item == 'home'">
     <li class="nav-item">
       <a class="nav-link"
         routerLink="/">
@@ -13,7 +9,7 @@
     </li>
   </div>
 
-  <div class = "Latest News">
+  <div class = "Latest News" *ngIf="item == 'news'">
     <li class="nav-item">
       <a class="nav-link"
         routerLink="/">
@@ -22,7 +18,7 @@
     </li>
   </div>
 
-  <div class = "Class Schedule">
+  <div class = "Class Schedule"  *ngIf="item == 'schedule'">
     <li class="nav-item">
       <a class="nav-link"
         routerLink="/">
@@ -43,9 +39,14 @@
     </li>
   </div>
 
-  <div class = "Photo and Video Gallery"></div>
+  <div class = "Photo and Video Gallery"  *ngIf="item == 'gallery'">
+    <ul>
+      <li>Photos</li>
+      <li>Videos</li>
+    </ul>
+  </div>
 
-  <div class = "Resources"></div>
-
-  <div class = "Other"></div>
+  <div class = "Resources"  *ngIf="item == 'resource'">
+    Resources
+  </div>
 </nav>
