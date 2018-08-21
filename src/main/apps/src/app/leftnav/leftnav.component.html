@@ -1,24 +1,22 @@
-
-<nav>
-  <div class = "Home" *ngIf="item == 'home'">
+<nav class="leftnav">
+  <div class = "leftnav-item" *ngIf="item == 'home'">
     <li class="nav-item">
-      <a class="nav-link"
-        routerLink="/">
+      <a class="nav-link" 
+      routerLink="/">
         Home
       </a>
     </li>
   </div>
 
-  <div class = "Latest News" *ngIf="item == 'news'">
+  <div class = "leftnav-item" *ngIf="item == 'news'">
     <li class="nav-item">
-      <a class="nav-link"
-        routerLink="/">
+      <a class="nav-link" routerLink="/">
         Latest News 
       </a>
     </li>
   </div>
 
-  <div class = "Class Schedule"  *ngIf="item == 'schedule'">
+  <div class = "leftnav-item"  *ngIf="item == 'schedule'">
     <li class="nav-item">
       <a class="nav-link"
         routerLink="/">
@@ -39,14 +37,14 @@
     </li>
   </div>
 
-  <div class = "Photo and Video Gallery"  *ngIf="item == 'gallery'">
+  <div class = "leftnav-item"  *ngIf="item == 'gallery'">
     <ul>
       <li>Photos</li>
       <li>Videos</li>
     </ul>
   </div>
 
-  <div class = "Resources"  *ngIf="item == 'resource'">
+  <div class = "leftnav-item"  *ngIf="item == 'resource'">
     Resources
   </div>
 </nav>

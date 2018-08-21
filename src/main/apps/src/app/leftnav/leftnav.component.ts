@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { HeaderComponent } from '../header/header.component'; 
 
 @Component({
@@ -8,11 +8,15 @@ import { HeaderComponent } from '../header/header.component';
 })
 export class LeftnavComponent implements OnInit {
 
-  @Input() item: string;
-
+  @Output() itemEvent = new EventEmitter<string>();
+  
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClick(item: string): void {
+    this.itemEvent.emit(item);
   }
 
 }
