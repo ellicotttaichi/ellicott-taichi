@@ -26,8 +26,12 @@
     font-size: 18px;
     position: relative;
     list-style: none;
-    color: skyblue;
-    background-color: white;
-    border: 2px solid blue; /* Green */
+    background-color:skyblue;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
+.leftnav .leftnav-item:hover{
+    background-color: coral;
+    color: white;
+}
