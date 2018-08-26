@@ -26,9 +26,12 @@
   </div>
 
   <div class = "leftnav-item"  *ngIf="item == 'gallery'">
-    <ul>
-      <li>Photos and Video</li>
-    </ul>
+    <li class="nav-item">
+      <a class="nav-link"
+        routerLink="/">
+        Photos and Videos
+      </a>
+    </li>
   </div>
 
   <div class = "leftnav-item"  *ngIf="item == 'resource'">
