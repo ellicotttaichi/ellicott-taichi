@@ -1,0 +1,10 @@
+<div class = "website">
+  <app-header  (itemEvent)="receiveHeaderEvent($event)"></app-header>
+  <app-leftnav [item]="headerItem"></app-leftnav>
+  <div>
+    <div id = 'left-nav-menus'> </div>
+    <div id = 'mainContentCtrl'> </div>
+  </div>
+
+  <div ng-include= "'footer.view.html'"></div>
+</div>
